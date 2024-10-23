@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: awareable-fw
       path: awareable-fw
-      revision: feature/slm_app
+      revision: develop
     - name: sdk-nrf
       path: nrf
       revision: v2.7.0-sendrato

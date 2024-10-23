@@ -1,17 +1,19 @@
 #  AWF NCS
 
-This repository is meant to be used to build the environment based n NCS (nRF Connect SDK), containing the Onomondo
-soft SIM library allowing to build the applications available in `awareable-fw/apps_ncs`.
+Repository to setup NCS / nRF Connect SDK (sendrato-fork) to build `awareable-fw/apps`.
 
 The following repositories will be fetched:
-- awareable-fw: awareable stack source code
-- nrf: Sendrato's fork of NCS (nRF Connect SDK), used to fetch Zephyr OS and else everything needed by the SDK
-- onomondo-softsim: Zephyr module to add softsim feature
+- `nrf`: Sendrato's fork of NCS, used to fetch Zephyr OS and everything else needed by the SDK.
+- `awareable-fw`: Awareable-stack.
+- `onomondo-softsim`: Zephyr module to add Onomondo-softsim feature.
 
-Initialize the repository running:
+To setup repository:
 
-`west init -m git@github.com:Sendrato/awf_ncs.git`
+```
+mkdir <SOME-PATH>/awf-zephyr-env
+cd <SOME-PATH>/awf-zephyr-env
+west init -m git@github.com:Sendrato/awf_ncs.git --mr main
+west update
+```
 
-Then pull the other repositories running:
-
-`west update`
+> NOTE: For full setup of CLion and Zephyr SDK, see `awareable-fw` repository and wiki.

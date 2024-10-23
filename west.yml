@@ -1,0 +1,24 @@
+manifest:
+  defaults:
+    remote: sendrato-git
+
+  remotes:
+    - name: sendrato-git
+      url-base: git@github.com:Sendrato
+    - name: onomondo-git
+      url-base: https://github.com/onomondo
+
+  projects:
+    - name: awareable-fw
+      path: awareable-fw
+      revision: develop
+    - name: sdk-nrf
+      path: nrf
+      revision: v2.7.0-sendrato
+      import: true
+    - name: nrf-softsim
+      path: modules/lib/onomondo-softsim
+      remote: onomondo-git
+
+  self:
+    path: awf-ncs

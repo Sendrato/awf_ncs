@@ -1,6 +1,6 @@
 #  AWF NCS
 
-Repository to setup NCS / nRF Connect SDK (sendrato-fork) to build `awareable-fw/apps`.
+Repository to setup NCS / nRF Connect SDK (sendrato-fork) to build `awareable-fw/apps_ncs`.
 
 The following repositories will be fetched:
 - `nrf`: Sendrato's fork of NCS, used to fetch Zephyr OS and everything else needed by the SDK.
@@ -10,8 +10,8 @@ The following repositories will be fetched:
 To setup repository:
 
 ```
-mkdir <SOME-PATH>/awf-zephyr-env
-cd <SOME-PATH>/awf-zephyr-env
+mkdir <SOME-PATH>/awf-ncs-env
+cd <SOME-PATH>/awf-ncs-env
 west init -m git@github.com:Sendrato/awf_ncs.git --mr main
 west update
 ```

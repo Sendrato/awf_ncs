@@ -19,6 +19,7 @@ manifest:
     - name: nrf-softsim
       path: modules/lib/onomondo-softsim
       remote: onomondo-git
+      revision: v5.1.0
 
   self:
     path: awf-ncs
